@@ -1,1 +1,1 @@
-# AJAXCalculator
+# calculator
