@@ -9,8 +9,13 @@
 
 		var op = document.getElementById("op").value;
 
-		var url = "http://localhost:8080/CalculatorWeb/eval?n1=" + n1 + "&n2="
+		var durl = window.location.href;
+    		var arr= durl.split("/") ;
+    
+		var url = "http://"+arr[2]+"/"+arr[3]+"/eval?n1=" + n1 + "&n2="
 				+ n2 + "&op=" + op;
+
+
 
 		var xhr = new XMLHttpRequest();
 
