@@ -9,23 +9,23 @@ public class CalculatorTest {
 	Calculator cal=new Calculator();
 	 @Test	
 		public void addTest() {
-		int output=cal.addFunction(6, 5);
-			assertEquals(11, output);
+		
+			assertEquals(11,cal.addFunction(6, 5));
 		}
 	 @Test
 		public void substractTest() {
-			int output=cal.substractFunction(9, 3);
-			assertEquals(6, output);
+			
+			assertEquals(6, cal.substractFunction(9, 3));
 		}
 	 @Test
 		public void multiplyTest() {
-			int output=cal.multiplyFunction(4, 7);
-			assertEquals(28, output);
+			
+			assertEquals(28,cal.multiplyFunction(4, 7));
 		}
 	 @Test
 		public void divideTest() {
-			int output=cal.divideFunction(6, 3);
-			assertEquals(2, output);
+			
+			assertEquals(2,cal.divideFunction(6, 3));
 		}
 
 }
