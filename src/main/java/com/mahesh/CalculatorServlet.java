@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class CalculatorServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private PrintWriter out;
+	static PrintWriter out;
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("Serving Request---");
@@ -22,7 +22,7 @@ public class CalculatorServlet extends HttpServlet {
 		try {
 			response.getWriter();
 		} catch (Exception e) {
-			e.printStackTrace();
+			out.print("Something went wrong.");
 		}
 		int num1=0;
 		int num2=0;
